@@ -28,7 +28,7 @@ $npm install
 
 ## Running
 
-`http://localhost:8000/manifest.m3u8`에서 확인
+`http://localhost:8000/`에서 확인
 
 ```shell
 $npm start
