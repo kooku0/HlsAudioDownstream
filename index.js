@@ -10,7 +10,11 @@ var url = require('url');
 var path = require('path');
 var zlib = require('zlib');
 
-PORT = 8000;
+const audioPath = __dirname + "/audio/";
+const viewPath = __dirname + "/view/";
+
+let PORT = process.env.PORT || 8000;
+let SERVER_ADDR = "127.0.0.1"
 
 http.createServer(function (req, res) {
 	var uri = url.parse(req.url).pathname;
@@ -24,7 +28,20 @@ http.createServer(function (req, res) {
 		res.end();
 		return;
 	}
-
+	if (uri == '/') {
+		res.writeHead(302, {
+			'Location': '/play_audio'
+		});
+		res.end();
+		return;
+	} else if (uri == '/play_audio') {
+		res.writeHead(200, {
+			'Content-Type': 'text/html'
+		});
+		var stream = fs.createReadStream(viewPath + "play_audio.html");
+		stream.pipe(res);
+		return;
+	}
 	var filename = path.join("./audio/", uri);
 	fs.exists(filename, function (exists) {
 		if (!exists) {
@@ -78,4 +95,6 @@ http.createServer(function (req, res) {
 			}
 		}
 	});
-}).listen(PORT);
+}).listen(PORT, () => {
+	console.log('Launching server listening on ... ', SERVER_ADDR + ':' + PORT);
+});

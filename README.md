@@ -8,9 +8,7 @@
 
 ### Prerequisites
 
-**크롬 브라우저**의 경우 hls프로토콜이 적용되지 않는다. 따라서 hls 확장 프로그램을 설치 해줘야한다.
-
-[Native HLS Playback](<https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof?hl=ko>)에서 설치하자!!!
+HLS 프로토콜을 지원하지 않는 브라우저의 경우 hls 확장 프로그램을 설치 해줘야한다.
 
 ### Installing
 
