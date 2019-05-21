@@ -34,7 +34,9 @@ $npm install
 $npm start
 ```
 
+### Screen shot
 
+<img src='./resource/demo.jpg' />
 
 ## Reference
 
