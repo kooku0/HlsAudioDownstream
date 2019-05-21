@@ -38,6 +38,10 @@ $npm start
 
 <img src='./resource/demo.jpg' />
 
+현재의 재생상황에 따라 다음 파일을 요청하는 것을 볼 수 있다.
+
+<img src="./resource/network.jpg"/>
+
 ## Reference
 
 * <https://gist.github.com/mharsch/5188206>

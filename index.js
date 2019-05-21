@@ -47,8 +47,6 @@ http.createServer(function (req, res) {
 								{'Content-Type':
 								'application/vnd.apple.mpegurl'});
 							var ae = req.headers['accept-encoding'];
-							console.log(req.headers)
-							console.log(ae)
 							if (ae.match(/\bgzip\b/)) {
 								zlib.gzip(contents, function (err, zip) {
 									if (err) throw err;
