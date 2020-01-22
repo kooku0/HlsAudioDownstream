@@ -23,7 +23,7 @@ Install modules.
 * zlib
 
 ```shell
-$npm install
+$npm install http fs url path zlib
 ```
 
 ## Running
