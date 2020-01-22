@@ -1,6 +1,6 @@
 # HlsAudioDownstream
 
-**HLS streaming from node** : HLS 프로토콜을 이용하여 Audio Downstream 기능을 구현한 node.js서버
+**HLS streaming from node** : Node.js Server that implements Audio Downstream using HLS protocol.
 
 ## Getting Started
 
@@ -8,13 +8,13 @@
 
 ### Prerequisites
 
-HLS 프로토콜을 지원하지 않는 브라우저의 경우 hls 확장 프로그램을 설치 해줘야한다.
+For browsers that do not support HLS protocol, you must install the hls extension.
 
 ### Installing
 
-윈도우 10, chrome 환경에서 실행하였다.
+Run in Window 10, chrome environment.
 
-모듈들을 설치해준다.
+Install modules.
 
 * http
 * fs
@@ -28,7 +28,7 @@ $npm install
 
 ## Running
 
-`http://localhost:8000/`에서 확인
+check in `http://localhost:8000/`
 
 ```shell
 $npm start
@@ -38,7 +38,7 @@ $npm start
 
 <img src='./resource/demo.jpg' />
 
-현재의 재생상황에 따라 다음 파일을 요청하는 것을 볼 수 있다.
+Depending on the current playback situation, you can see that you are requesting the following file.
 
 <img src="./resource/network.jpg"/>
 
